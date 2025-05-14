@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support - EasyEats</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-image: url('homepage3.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .link {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background 0.3s ease;
+            cursor: pointer;
+        }
+
+        .link:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+        }
+
+        .link a {
+            color: #161313;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            color: #edf0f3;
+            font-size: 2.5em;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .welcome-section, .faq-section, .form-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .welcome-section p {
+            margin-bottom: 20px;
+        }
+
+        .faq-section h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .faq-section details {
+            margin-bottom: 15px;
+        }
+
+        .faq-section summary {
+            cursor: pointer;
+            font-weight: bold;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .faq-section details p {
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 0 0 5px 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        form button {
+            background: #2c3e50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background: #34495e;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .welcome-section, .faq-section, .form-section {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            form input, form textarea {
+                padding: 8px;
+            }
+
+            form button {
+                padding: 8px;
+            }
+
+            .faq-section summary {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="links">
+        <div class="link"><a href="index.html">Home</a></div>
+        <div class="link"><a href="AboutUs.html">About Us</a></div>
+        <div class="link"><a href="Recipes.html">Recipes</a></div>
+        <div class="link"><a href="Cookingtips.html">Cooking Tips</a></div>
+    </div>
+
+
+    <div class="container">
+        <header>
+            <h1>Help & Support - EasyEats</h1>
+        </header>
+
+        <div class="main-grid">
+            <div>
+                <section class="welcome-section">
+                    <h2>Welcome to EasyEats Support</h2>
+                    <p>We're here to help you make the most of your cooking journey with EasyEats. Whether you have questions about recipes, need technical support, or want to share feedback, our team is ready to assist. Browse our FAQs below or submit a support request, and we'll get back to you as soon as possible!</p>
+                </section>
+
+                <section class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <details>
+                        <summary>How do I save my favorite recipes?</summary>
+                        <p>Create an account and use the "Save Recipe" button on any recipe page to add it to your personal collection.</p>
+                    </details>
+                    <details>
+                        <summary>Can I submit my own recipes?</summary>
+                        <p>Yes! Registered users can submit recipes via the "Share Your Recipe" page. All submissions are reviewed before publishing.</p>
+                    </details>
+                    <details>
+                        <summary>How do I reset my password?</summary>
+                        <p>Click "Forgot Password" on the login page and follow the instructions sent to your registered email.</p>
+                    </details>
+                    <details>
+                        <summary>Is there a mobile app for EasyEats?</summary>
+                        <p>We're working on it! For now, our website is fully responsive and works great on mobile devices.</p>
+                    </details>
+                </section>
+            </div>
+
+            <section class="form-section">
+                <h2>Contact Support</h2>
+                <form action="https://webdevbasics.net/scripts/javajam8.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="issue">Describe Your Issue:</label>
+                    <textarea id="issue" name="issue" rows="5" required></textarea>
+
+                    <button type="submit">Submit Request</button>
+                </form>
+            </section>
+        </div>
+
+       <div class="footer">
+            Copyright &copy; 2025 Easy Eats<br>
+            <a href="mailto:DanielChikuru.com">DanielChikuru.com
+        </div>
+    </div>
+</body>
+</html>

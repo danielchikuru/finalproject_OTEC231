@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('homepage3.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: rgba(243, 240, 240, 0.7);
+      border: 2px solid #fff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin: 20px;
+      padding: 10px;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin: 20px;
+    }
+
+    .link {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s ease, background 0.3s ease;
+      cursor: pointer;
+    }
+
+    .link:hover {
+      background: rgba(255, 255, 255, 0.4);
+      transform: scale(1.05);
+    }
+
+    .link a {
+      color: #161313;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border: 2px solid #000;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .footer {
+      background: rgba(236, 231, 231, 0.7);
+      border: 2px solid #fff;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      margin: 20px;
+      padding: 10px;
+    }
+
+    .footer a {
+      color: #161313;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .links {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Recipes</header>
+  <div class="links">
+    <div class="link"><a href="index.html">Home</a></div>
+    <div class="link"><a href="AboutUs.html">About Us</a></div>
+    <div class="link"><a href="Cookingtips.html">Cooking Tips</a></div>
+    <div class="link"><a href="help&support.html">Help & Support</a></div>
+  </div>
+  <main>
+    <div class="cards">
+      <div class="card">
+        <a href="recipe1.html">
+          <img src="chickenwings.jpg" alt="Chicken Wings">
+        </a>
+      </div>
+      <div class="card">
+        <a href="recipe2.html">
+          <img src="meatballs.jpg" alt="Meatballs">
+        </a>
+      </div>
+      <div class="card">
+        <a href="recipe3.html">
+          <img src="lamb.jpg" alt="Lamb">
+        </a>
+      </div>
+      <div class="card">
+        <a href="recipe4.html">
+          <img src="pizza.jpg" alt="Pizza">
+        </a>
+      </div>
+    </div>
+  </main>
+  <div class="footer">
+    Copyright © 2025 Easy Eats<br>
+    <a href="mailto:DanielChikuru.com">DanielChikuru.com</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('homepage3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.link {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.link:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.link a {
+    color: #161313;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "picture ingredients"
+        "picture instructions"
+        "footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr 2fr auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+}
+
+.picture {
+    grid-area: picture;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients {
+    grid-area: ingredients;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+}
+
+.ingredients h2, .instructions h2 {
+    margin-bottom: 10px;
+    color: #2a9d8f;
+}
+
+.ingredients ul, .instructions ol {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+
+.ingredients li, .instructions li {
+    margin-bottom: 8px;
+}
+
+.instructions {
+    grid-area: instructions;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "picture"
+            "ingredients"
+            "instructions"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    .picture, .ingredients, .instructions {
+        text-align: center;
+    }
+
+    .ingredients ul, .instructions ol {
+        list-style-position: outside;
+        margin-left: 0;
+    }
+}

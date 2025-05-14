@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Eats</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('homepage3.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: auto auto auto auto auto;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100vh;
+        }
+
+        .header, .footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .welcome-message {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            font-size: 1.2rem;
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .link {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background 0.3s ease;
+            cursor: pointer;
+        }
+
+        .link:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+        }
+
+        .link a {
+            color: #161313;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-rows: auto auto auto auto auto;
+                padding: 10px;
+            }
+
+            .links {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .welcome-message {
+                padding: 20px;
+                font-size: 1rem;
+            }
+
+            .header, .footer {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .links {
+                grid-template-columns: 1fr;
+            }
+
+            .welcome-message {
+                padding: 15px;
+                font-size: 0.9rem;
+            }
+
+            .header, .footer {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Easy Eats</h1>
+        </div>
+        <div class="links">
+            <div class="link"><a href="AboutUs.html">About Us</a></div>
+            <div class="link"><a href="Recipes.html">Recipes</a></div>
+            <div class="link"><a href="Cookingtips.html">Cooking Tips</a></div>
+            <div class="link"><a href="help&support.html">Help & Support</a></div>
+        </div>
+        <div class="welcome-message">
+            <h2>Hello Food Lovers</h2>
+            <p>Welcome to EasyEats! We're thrilled to have you join our community of food lovers. Here, you'll find simple, delicious recipes to spark your creativity and make every meal a breeze. From quick weeknight dinners to delightful desserts, EasyEats is your go-to for hassle-free cooking. Dive in, explore, and let's make tasty memories together!</p>
+        </div>
+        <div class="welcome-message">
+            <h2>We Got You !!!</h2>
+            <p>We're so excited to share our love for simple, flavorful cooking with you. Discover our story on the About Us page, dive into our collection of mouthwatering Recipes, pick up clever Cooking Tips to elevate your skills, and find answers anytime at Help & Support. Let’s make every meal deliciously easy—start exploring now!</p>
+        </div>
+        <div class="footer">
+            Copyright © 2025 Easy Eats<br>
+            <a href="mailto:DanielChikuru.com">DanielChikuru.com
+        </div>
+    </div>
+</body>
+</html>
